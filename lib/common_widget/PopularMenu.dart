@@ -24,14 +24,16 @@ class PopularMenu extends StatelessWidget {
                 child: RawMaterialButton(
                   onPressed: () {},
                   shape: CircleBorder(),
-                  child: Icon(
-                    Icons.account_balance,
-                    color: Color(0xFFAB436B),
-                  ),
+                  // child: Icon(
+                  //   Icons.account_balance,
+                  //   color: Color(0xFFAB436B),
+                  // ),
+                  child: Image.asset("assets/images/FineRubyR.png",
+                      height: 150, width: 100),
                 ),
               ),
               Text(
-                "Popular",
+                "Fine Ruby",
                 style: TextStyle(
                     color: Color(0xFF969696),
                     fontFamily: 'Roboto-Light.ttf',
@@ -49,10 +51,12 @@ class PopularMenu extends StatelessWidget {
                 child: RawMaterialButton(
                   onPressed: () {},
                   shape: CircleBorder(),
-                  child: Icon(
-                    FontAwesomeIcons.clock,
-                    color: Color(0xFFC1A17C),
-                  ),
+                  // child: Icon(
+                  //   FontAwesomeIcons.clock,
+                  //   color: Color(0xFFC1A17C),
+                  // ),
+                  child: Image.asset("assets/images/FineRubyR.png",
+                      height: 150, width: 100),
                 ),
               ),
               Text(
@@ -74,10 +78,8 @@ class PopularMenu extends StatelessWidget {
                 child: RawMaterialButton(
                   onPressed: () {},
                   shape: CircleBorder(),
-                  child: Icon(
-                    FontAwesomeIcons.truck,
-                    color: Color(0xFF5EB699),
-                  ),
+                  child: Image.asset("assets/images/FineRubyR.png",
+                      height: 150, width: 100),
                 ),
               ),
               Text(
@@ -99,10 +101,8 @@ class PopularMenu extends StatelessWidget {
                 child: RawMaterialButton(
                   onPressed: () {},
                   shape: CircleBorder(),
-                  child: Icon(
-                    FontAwesomeIcons.gift,
-                    color: Color(0xFF4D9DA7),
-                  ),
+                  child: Image.asset("assets/images/FineRubyR.png",
+                      height: 150, width: 100),
                 ),
               ),
               Text(

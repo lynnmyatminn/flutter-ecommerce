@@ -23,11 +23,9 @@ class AppSingUp extends StatelessWidget {
                   child: Align(
                     alignment: Alignment.topLeft,
                     child: Icon(Icons.close),
-
                   ),
-
                 ),
-                onTap: (){
+                onTap: () {
                   Navigator.pop(context);
                 },
               ),
@@ -41,7 +39,7 @@ class AppSingUp extends StatelessWidget {
                     width: 130,
                     height: 130,
                     alignment: Alignment.center,
-                    child: Image.asset("assets/images/ic_app_icon.png"),
+                    child: Image.asset("assets/images/higempro.png"),
                   ),
                   SizedBox(
                     height: 15,

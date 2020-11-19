@@ -64,7 +64,7 @@ Widget _createDrawerHeader() {
           padding: EdgeInsets.all(20),
           child: Center(
             child: Image.asset(
-              'assets/images/ic_app_icon.png',
+              'assets/images/higempro.png',
               width: 130,
               height: 130,
             ),
@@ -73,7 +73,7 @@ Widget _createDrawerHeader() {
         Positioned(
             bottom: 12.0,
             left: 16.0,
-            child: Text("Developed for learing purpose by 'TARIKUL'",
+            child: Text("Developed for learing purpose by 'AIGS'",
                 style: TextStyle(
                     color: Color(0xFF545454),
                     fontSize: 10.0,

@@ -55,10 +55,17 @@ flutter:
     - assets/images/promotion__one.png
     - assets/images/promotion_three.png
     - assets/images/ic_app_icon.png
+    - assets/images/jtcb2blogo.png
+    - assets/images/higempro.png
     - assets/images/ic_category_image.png
     - assets/images/empty_shopping_cart_image.png
     - assets/images/empty_shopping_cart.png
     - assets/images/empty_wish_list.png
+    - assets/images/gempro1.png
+    - assets/images/gempro2.png
+    - assets/images/gempro3.png
+    - assets/images/FineRubyR.png
+    
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
 

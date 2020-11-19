@@ -1,18 +1,20 @@
 import 'dart:developer';
 import 'package:flutter/material.dart';
-import 'package:flutter_ecommerce_app/screens/ProductDetailScreen.dart';
-import 'package:flutter_ecommerce_app/screens/ProductsScreen.dart';
-import 'package:flutter_ecommerce_app/screens/SubCategoryScreen.dart';
+import 'package:flutter_ecommerce_app/screens/JTCProductDetailScreen.dart';
+import 'package:flutter_ecommerce_app/screens/JTCProductsScreen.dart';
+import 'package:flutter_ecommerce_app/screens/JTCSubCategoryScreen.dart';
 
-class GridTilesProducts extends StatelessWidget {
+class GridTilesJTCProducts extends StatelessWidget {
+  String id;
   String name;
   String imageUrl;
   String slug;
   String price;
   bool fromSubProducts = false;
 
-  GridTilesProducts(
+  GridTilesJTCProducts(
       {Key key,
+      @required this.id,
       @required this.name,
       @required this.imageUrl,
       @required this.slug,
@@ -47,8 +49,8 @@ class GridTilesProducts extends StatelessWidget {
         Navigator.push(
           context,
           MaterialPageRoute(
-              builder: (context) => ProductDetailScreen(
-                    slug: "products/" + slug + "/",
+              builder: (context) => JTCProductDetailScreen(
+                    slug: "Product/GetAllProductsByID/" + id + "/",
                   )),
         );
       },

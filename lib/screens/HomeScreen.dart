@@ -2,8 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_ecommerce_app/components/BrandHomePage.dart';
 import 'package:flutter_ecommerce_app/components/CategorySlider.dart';
 import 'package:flutter_ecommerce_app/common_widget/PopularMenu.dart';
+import 'package:flutter_ecommerce_app/common_widget/JTCPopularMenu.dart';
 import 'package:flutter_ecommerce_app/common_widget/SearchWidget.dart';
 import 'package:flutter_ecommerce_app/common_widget/TopPromoSlider.dart';
+import 'package:flutter_ecommerce_app/components/JTCCategorySlider.dart';
 import 'package:flutter_ecommerce_app/components/ShopHomePage.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -20,6 +22,7 @@ class _HomeScreenState extends State<HomeScreen> {
           SearchWidget(),
           TopPromoSlider(),
           PopularMenu(),
+          //JTCPopularMenu(),
           SizedBox(
             height: 10,
             child: Container(
@@ -39,7 +42,10 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
                 Tab(
                   text: 'Shops',
-                )
+                ),
+                // Tab(
+                //   text: 'JTC Categories',
+                // )
               ], // list of tabs
             ),
           ),
@@ -54,8 +60,12 @@ class _HomeScreenState extends State<HomeScreen> {
               children: [
                 Container(
                   color: Colors.white24,
-                  child: CategoryPage(slug: 'categories/'),
+                  child: JTCCategoryPage(slug: 'Category/GetAllCategory/'),
                 ),
+                // Container(
+                //   color: Colors.white24,
+                //   child: CategoryPage(slug: 'categories/'),
+                // ),
                 Container(
                   color: Colors.white24,
                   child: BrandHomePage(slug: 'brands/?limit=20&page=1'),
@@ -65,7 +75,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   child: ShopHomePage(
                     slug: 'custom/shops/?page=1&limit=15',
                   ),
-                ) // class name
+                ), // class name
               ],
             ),
           ),
